@@ -1,0 +1,44 @@
+.custom-balloon {
+    padding: 16px 18px 20px;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: white;
+    // position: absolute;
+    height: 260px;
+    bottom: 0;
+    margin-top: auto;
+}
+.custom-balloon-title {
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.custom-balloon-content {
+    color: #666666;
+}
+// .ymaps-2-1-79-inner-panes {
+//     position: relative;
+//     display: flex;
+//     align-items: end;
+// }
+.custom-balloon-container {
+    padding: 16px 18px 20px;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: white;
+    width: 100%;
+    height: 260px;
+    // position: absolute;
+    // bottom: -260px;
+    top: -415px;
+    position: relative;
+    // z-index: 500;
+}
+.map {
+    margin-top: 36px;
+    margin-bottom: 260px;
+    // position: relative;
+}
+.ymaps-2-1-79-gotoymaps__container, .ymaps-2-1-79-gototech {
+    display: none !important;
+}

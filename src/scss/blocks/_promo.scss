@@ -81,6 +81,7 @@
 			svg {
 				inline-size: 18px;
 				aspect-ratio: 1;
+				fill: #fff
 			}
 		}
 	}
@@ -89,6 +90,10 @@
 	}
 	.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
 		bottom: 28px;
+	}
+	.offer .swiper-horizontal > .swiper-pagination-bullets, .offer .swiper-pagination-bullets.swiper-pagination-horizontal, .offer .swiper-pagination-custom, .offer .swiper-pagination-fraction {
+		bottom: 28px;
+		position: relative;
 	}
 	.swiper-pagination-bullet {
 		width: 8px;
@@ -108,3 +113,10 @@
 		transition: background .4s, border .4s;
 	}
 }
+
+@media screen and (max-width: 576px) {
+	.swiper-button-next, .swiper-button-prev {
+		display: none;
+	}
+}
+
