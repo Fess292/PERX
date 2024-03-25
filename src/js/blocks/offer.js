@@ -1,7 +1,7 @@
 import Swiper from '../modules/swiper-bundle.min.js';
 
 var catalogSlider = null;
-var mediaQuerySize = 990;
+var mediaQuerySize = 1440;
 
 function catalogSliderInit() {
     if (!catalogSlider) {

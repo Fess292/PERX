@@ -99,3 +99,50 @@
 .mobile-nav--open {
 	top: 0;
 }
+
+@media screen and (min-width: 768px) {
+	.mobile-nav {
+		padding-top: 70px;
+		&__lists {
+			width: 100%;
+			max-width: 552px;
+			display: grid;
+			grid-template-columns: repeat(2, auto);
+			grid-template-rows: repeat(2, auto);
+		}
+		&__contacts {
+			width: 100%;
+			max-width: 552px;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(3, auto);
+		}
+		&__phones {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: auto;
+			grid-column: 1/-1;
+		}
+		&__social {
+			grid-row: -1/-2;
+			grid-column: 1/2;
+		}
+	}
+}
+@media screen and (min-width: 990px) {
+	.mobile-nav {
+		max-width: 720px;
+		&__item {
+			&--models {
+				grid-column: 1/-1;
+				
+				ul {
+					display: flex;
+					flex-direction: column;
+					flex-wrap: wrap;
+					height: 152px;
+				}
+			}
+		}
+	}
+}

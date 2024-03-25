@@ -27,25 +27,45 @@
                 <br>
                 Name
             </h3>
-            
+        </div>
+        <div class="header__right">
+            <a href="+79876543210" class="header__button header__button--phone">
+                <span>
+                    +7 (987) 654 32 10
+                </span>
+                <svg class="icon">
+                    <use xlink:href="#ico-tel"></use>
+                </svg>
+            </a>
+            <a href="" class="header__button header__button--ask">
+                <span>
+                    другие акции 
+                </span>
+                <svg class="icon">
+                    <use xlink:href="#ico-ask"></use>
+                </svg>
+            </a>
         </div>
     </div>
 </header>
 <div class="mobile-nav">
 	<div class="mobile-nav__lists">
-		<h2 class="mobile-nav__title">
-			Модельный ряд
-		</h2>
-		<ul class="mobile-nav__list">
-			<li><a href="#!">Название модели</a></li>
-			<li><a href="#!">Название модели</a></li>
-			<li><a href="#!">Название модели</a></li>
-			<li><a href="#!">Название модели</a></li>
-			<li><a href="#!">Название модели</a></li>
-			<li><a href="#!">Название модели</a></li>
-			<li><a href="#!">Название модели</a></li>
-		</ul>
-		<h2 class="mobile-nav__title">
+		<div class="mobile-nav__item mobile-nav__item--models">
+			<h2 class="mobile-nav__title">
+				Модельный ряд
+			</h2>
+			<ul class="mobile-nav__list">
+				<li><a href="#!">Название модели</a></li>
+				<li><a href="#!">Название модели</a></li>
+				<li><a href="#!">Название модели</a></li>
+				<li><a href="#!">Название модели</a></li>
+				<li><a href="#!">Название модели</a></li>
+				<li><a href="#!">Название модели</a></li>
+				<li><a href="#!">Название модели</a></li>
+			</ul>
+		</div>
+		<div class="mobile-nav__item">
+			<h2 class="mobile-nav__title">
 			Покупателям
 		</h2>
 		<ul class="mobile-nav__list">
@@ -55,15 +75,19 @@
 			<li><a href="#!">Трейд-ин</a></li>
 			<li><a href="#!">Страхование</a></li>
 		</ul>
-		<h2 class="mobile-nav__title">
-			Владельцам
-		</h2>
-		<ul class="mobile-nav__list">
-			<li><a href="#!">Сервисное обслуживание</a></li>
-			<li><a href="#!">Запасные части</a></li>
-			<li><a href="#!">Гарантийный ремонт</a></li>
-			<li><a href="#!">Запись на сервис</a></li>
-		</ul>
+		</div>
+		<div class="mobile-nav__item">
+			<h2 class="mobile-nav__title">
+				Владельцам
+			</h2>
+			<ul class="mobile-nav__list">
+				<li><a href="#!">Сервисное обслуживание</a></li>
+				<li><a href="#!">Запасные части</a></li>
+				<li><a href="#!">Гарантийный ремонт</a></li>
+				<li><a href="#!">Запись на сервис</a></li>
+			</ul>
+		</div>
+		
 	</div>
 	<div class="mobile-nav__contacts">
 		<div class="mobile-nav__phones">
@@ -267,6 +291,9 @@
 </section>
 			<section class="offer">
 	<div class="container">
+        <h2 class="offer__title">
+            Акции и предложения
+        </h2>
 		<div class="swiper offer__slider">
 			<div class="swiper-wrapper">
 				<figure class="swiper-slide slide">
@@ -380,13 +407,151 @@
         </a>
 	</div>
 </section>
-			<div id="map" class="map" style="width: 600px; height: 306px;"></div>
+			<div id="map" class="map" style=" height: 306px;"></div>
 			<footer class="footer">
-	<div class="container">
-		<h2>Footer</h2>
-	</div>
-</footer>
+	<!-- <div class="container"> -->
+		<div class="accordion">
+			<h2 class="footer__title">
+				Dealer Company Name
+			</h2>
+			<div class="accordion__container">
+				<div class="footer__item footer__item--1">
+					<h4 class="accordion__title js-accordion-title">Модельный ряд</h4>
+				<div class="accordion__content">
+					<ul class="footer__list">
+						<li>
+							<a href="">Название модели</a>
+						</li>
+						<li>
+							<a href="">Название модели</a>
+						</li>
+						<li>
+							<a href="">Название модели</a>
+						</li>
+						<li>
+							<a href="">Название модели</a>
+						</li>
+						<li>
+							<a href="">Название модели</a>
+						</li>
+						<li>
+							<a href="">Название модели</a>
+						</li>
+					</ul>
+				</div>
+				</div>
+				<div class="footer__item footer__item--2">
+					<h4 class="accordion__title js-accordion-title is-active">Покупателям</h4>
+				<div class="accordion__content is-open">
+					<ul class="footer__list">
+						<li>
+							<a href="">
+								Автомобили в наличии
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Акции и предложения
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Кредит
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Трейд-ин
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Страхование
 
+							</a>
+						</li>
+					</ul>
+				</div>
+				</div>
+				<div class="footer__item footer__item--3">
+					<h4 class="accordion__title js-accordion-title">Владельцам</h4>
+				<div class="accordion__content">
+					<ul class="footer__list">
+						<li>
+							<a href="">
+								Сервисное обслуживание
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Запасные части
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Гарантийный ремонт
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Запись на сервис
+
+							</a>
+						</li>
+					</ul>
+				</div>
+				</div>
+				
+				
+				<div class="footer__contacts">
+					<div class="footer__phone">
+						<h3 class="footer__subtitle">
+							Отдел продаж
+						</h3>
+						<a href="+79876543210">+7 (987) 654 32 10</a>
+					</div>
+					<div class="footer__phone">
+						<h3 class="footer__subtitle">
+							Отдел сервиса
+						</h3>
+						<a href="+79876543211">+7 (987) 654 32 11</a>
+					</div>
+				</div>
+				<div class="footer__social">
+					<h3 class="footer__subtitle">
+						Мы в соцсетях
+					</h3>
+					<a href="">
+						<svg class="icon">
+							<use xlink:href="#tg"></use>
+						</svg>
+					</a>
+					<a href="">
+						<svg class="icon">
+							<use xlink:href="#vk"></use>
+						</svg>
+					</a>
+					<a href="">
+						<svg class="icon">
+							<use xlink:href="#youtube"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="footer__bottom">
+					<p>
+						© 2023 Dealer Company Name
+					</p>
+					<a href="">
+						Правовая информация
+					</a>
+					<p>
+						Сделано <a href="">Fess292</a>
+					</p>
+				</div>
+			</div><!-- accordion__container -->
+		</div>
+	<!-- </div> -->
+</footer>
 			<svg width="0" height="0" class="hidden">
 	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="ico-ask">
 	  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 3.75C3.44771 3.75 3 4.19772 3 4.75L3 11.75C3 12.3023 3.44771 12.75 4 12.75H5.49997C5.77613 12.75 6 12.9739 6 13.25C6 13.6621 6.47038 13.8973 6.80001 13.6501L7.7336 12.95C7.90668 12.8202 8.1172 12.75 8.33355 12.75H14C14.5523 12.75 15 12.3023 15 11.75L15 4.75C15 4.19772 14.5523 3.75 14 3.75L4 3.75ZM6.09998 16.0499C5.44077 16.5444 4.5 16.074 4.5 15.25C4.5 14.6977 4.0523 14.25 3.50002 14.25H3C2.17275 14.25 1.5 13.5773 1.5 12.75L1.5 3.75C1.5 2.92275 2.17275 2.25 3 2.25L15 2.25C15.8272 2.25 16.5 2.92275 16.5 3.75V12.75C16.5 13.5773 15.8272 14.25 15 14.25H8.8331C8.61672 14.25 8.40618 14.3202 8.23307 14.45L6.09998 16.0499Z" fill="#262626"></path>
@@ -433,7 +598,6 @@
 	</symbol>
   </svg>
 
-			
 		</div>
 		<script src="./js/index.bundle.js"></script>
 	</body>

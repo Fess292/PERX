@@ -2,6 +2,14 @@
 	.container {
 		padding-right: 0;
 	}
+	&__title {
+		margin-top: 32px;
+		font-weight: 700;
+	font-size: 28px;
+	line-height: 1;
+	text-align: center;
+	color: #262626;
+	}
 	.swiper {
 		width: 100%;
 		overflow: visible;
@@ -122,5 +130,24 @@
 		}
 	}
 }
+@media screen and (min-width: 990px) {
+	.offer {
 
-
+		&__title {
+			margin-top: 76px;
+			font-size: 36px;
+			margin-bottom: 54px;
+		}
+	}
+}
+@media screen and (min-width: 1440px) {
+	.offer {
+		.swiper-pagination-bullet {
+			display: none;
+		}
+		.slide {
+			width: 400px;
+			margin-right: 36px;
+		}
+	}
+}

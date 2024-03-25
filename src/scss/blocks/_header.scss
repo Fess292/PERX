@@ -2,22 +2,104 @@
 	background-color: #fff;
 	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
 	padding: 10px 0;
+	position: fixed;
+	/* Или absolute, в зависимости от лэйаута */
+	top: 0;
+	left: 0;
+	width: 100%;
+	transition: top 0.3s;
+	z-index: 100;
+
 	&__logo {
 		svg {
 			width: 70px;
 			height: 25px;
 		}
-		
+
 	}
+
 	&__name {
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 1;
 	}
+
 	&__left {
 		display: flex;
 		align-items: center;
 		width: 85%;
 		justify-content: space-between;
+	}
+	&__right {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.header {
+		.container {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__name {
+			br {
+				display: none;
+			}
+		}
+		&__left {
+			width: 40%;
+		}
+		&__right {
+			display: flex;
+		}
+		&__button {
+			display: flex;
+			padding: 13px 24px;
+			align-items: center;
+			span {
+				font-weight: 700;
+				line-height: 1.5;
+				color: #262626;
+			}
+			svg {
+				aspect-ratio: 1;
+			}
+			&--phone {
+				svg {
+					margin-left: 8px;
+					inline-size: 24px;
+				}
+			}
+			&--ask {
+				border-radius: 8px;
+				border: 2px solid #262626;
+				svg {
+					margin-left: 18px;
+					inline-size: 19px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 990px) {
+	.header {
+		&__logo {
+			svg {
+				width: 105px;
+				height: 36px;
+			}
+		}
+		&__name {
+			font-size: 20px;
+		}
+	}
+}
+@media screen and (min-width: 1500px) {
+	.header {
+
+		&__left {
+			width: 403px;
+		}
 	}
 }

@@ -90,3 +90,9 @@
 // 		display: block;
 // 	}
 // }
+@media screen and (min-width: 990px) {
+	.mobile-nav-btn {
+		--width: 24px;
+		--height: 24px;
+	}
+}

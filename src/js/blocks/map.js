@@ -2,10 +2,12 @@
 ymaps.ready(init);
 
 function init() {
-    // Контейнер для вашего балуна
+    var mapContainer = document.querySelector('.map'); // Получаем контейнер карты
+
+    // Создаем контейнер для вашего балуна и добавляем его в контейнер карты
     var balloonContainer = document.createElement('div');
     balloonContainer.classList.add('custom-balloon-container');
-    document.body.appendChild(balloonContainer);
+    mapContainer.appendChild(balloonContainer); // Вместо document.body.appendChild(balloonContainer);
 
     var myMap = new ymaps.Map("map", {
         center: [55.76, 37.85], // Координаты центра карты
